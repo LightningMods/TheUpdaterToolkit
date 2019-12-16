@@ -1,5 +1,7 @@
 # The Updater Toolkit
-The Updater Toolkit is a experimental toolbox for launch hightly modified updater from Sony.
+The Updater Toolkit is a experimental *WIP* toolbox for launch hightly modified updater from Sony.
+
+No release is available for now, the source code is only here for research propose.
 
 Based on the work of [TheoryWrong](https://twitter.com/TheoryWrong), [LightningMods](https://twitter.com/LightningMods_) and [Zecoxao](https://twitter.com/notzecoxao).
 
