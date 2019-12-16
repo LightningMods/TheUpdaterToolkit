@@ -165,29 +165,7 @@ int init_kernel_474(struct thread* td) {
     void* (*kmem_alloc)(struct vm_map *map, uint64_t size) = (void*)(kernbase + KERN_474_KMEM_ALLOC);
 
     cpu_disable_wp();
-
-    // patch memcpy first
-    *(uint8_t *)(kernbase + 0x1EA53D) = 0xEB;
-
-    // patch sceSblACMgrIsAllowedSystemLevelDebugging
-    kern_memcpy((void *)(kernbase + 0x11730), "\x48\xC7\xC0\x01\x00\x00\x00\xC3", 8);
-
-    // patch sceSblACMgrHasMmapSelfCapability
-    kern_memcpy((void *)(kernbase + 0x117B0), "\x48\xC7\xC0\x01\x00\x00\x00\xC3", 8);
-
-    // patch sceSblACMgrIsAllowedToMmapSelf
-    kern_memcpy((void *)(kernbase + 0x117C0), "\x48\xC7\xC0\x01\x00\x00\x00\xC3", 8);
-
-    // self patches
-    kern_memcpy((void *)(kernbase + 0x13F03F), "\x31\xC0\x90\x90\x90", 5);
-
-    // patch vm_map_protect check
-    kern_memcpy((void *)(kernbase + 0x1A3C08), "\x90\x90\x90\x90\x90\x90", 6);
-
-    // patch kmem_alloc
-    *(uint8_t *)(kernbase + 0xFCD48) = VM_PROT_ALL;
-    *(uint8_t *)(kernbase + 0xFCD56) = VM_PROT_ALL;
-
+    // WIP
     cpu_enable_wp();
 
     uint64_t mapsize = 0;
@@ -220,6 +198,7 @@ int init_kernel_474(struct thread* td) {
 
 // Try to jailbreak the process
 int init_kernel(char* version) {
+    // WIP: Version to kernel
     custom_syscall(11, init_kernel_505);
 
     // Test to Jailbreak with new syscall
