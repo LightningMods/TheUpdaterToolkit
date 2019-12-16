@@ -33,11 +33,9 @@ void init() {
 	utilInit();
 
 	// Jailbreak after all resolved function
-	/*
 	char* firmware_version[5] = {0};
 	firmware_version_libc(firmware_version);
 	init_kernel(firmware_version);
-	*/
 
 	currentView->init();
 }
@@ -109,10 +107,6 @@ int main(int argc, const char* const argv[]) {
 	finish();
 
 	if (homebrewRun < 0) {
-		// Init the util system
-		utilInit();
-		init_kernel("5.05");
-
 		// Cleanup the Update folder
 		clean_update_folder();
 
