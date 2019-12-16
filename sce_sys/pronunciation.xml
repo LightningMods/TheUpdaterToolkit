@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gamePackage>
+  <language id="01" modified="0">
+    <speechRecognitionWords>
+      <text display="1">Updater Toolkit</text>
+      <pronunciation>u da t er ___ t ol q i t</pronunciation>
+    </speechRecognitionWords>
+    <speechRecognitionWords>
+      <text display="1">The Updater Loader</text>
+      <pronunciation>th e __ u da t er ___ t ol q i t</pronunciation>
+    </speechRecognitionWords>
+  </language>
+</gamePackage>

@@ -1,0 +1,12 @@
+build/*
+obj/*
+
+*.prx
+*.a
+*.lib
+
+*.o
+*.obj
+*.sprx
+*.elf
+*.self
