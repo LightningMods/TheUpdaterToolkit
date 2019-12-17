@@ -31,7 +31,7 @@ You need to put libc.prx and libSceFios2.prx inside the sce_module folder.
 
 You simply need to extract it with the FTP from your PS4. You can after just edit with IDA and a HEX Editor.
 
-You need to make some patch for launch it on your PS4, for now, you need to call the syscall 68 at the begin of the process.
+You need to make some patch for launch it on your PS4, for now, you need to call the syscall 67 at the begin of the process.
 See here for orbis_swu (5.05):
 
 ![Start syscall patch 1](https://nsa40.casimages.com/img/2019/12/16/191216041055338701.png "Start syscall patch 1")
